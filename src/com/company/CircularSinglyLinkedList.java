@@ -25,20 +25,20 @@ public class CircularSinglyLinkedList {
         return this.size;
     }
 
-    public Integer getFirst() {
+    public int getFirst() {
         return this.head.getValue();
     }
 
-    public Integer getLast() {
+    public int getLast() {
         return this.tail.getValue();
     }
 
-    public Integer get(int index) {
+    public int get(int index) {
         Node node = this.getNode(index);
         return node.getValue();
     }
 
-    public Integer set(int index, int value) {
+    public int set(int index, int value) {
         Node node = this.getNode(index);
         node.setValue(value);
         return node.getValue();
@@ -104,7 +104,7 @@ public class CircularSinglyLinkedList {
         return false;
     }
 
-    public Integer indexOf(int value) {
+    public int indexOf(int value) {
         if (isPresent(value)) {
             int currentIndex = 0;
             Node currentNode = this.head;
@@ -122,7 +122,7 @@ public class CircularSinglyLinkedList {
         throw new IllegalArgumentException("The specified value is not present in the list.");
     }
 
-    public Integer lastIndexOf(int value) {
+    public int lastIndexOf(int value) {
         if (isPresent(value)) {
             int currentIndex = 0;
             Node currentNode = this.head;
@@ -143,7 +143,7 @@ public class CircularSinglyLinkedList {
         throw new IllegalArgumentException("The specified value is not present in the list.");
     }
 
-    public Integer remove(int index) {
+    public int remove(int index) {
         if (index < 0 || index >= this.size) {
             throw new IndexOutOfBoundsException();
         }
