@@ -119,7 +119,7 @@ public class CircularSinglyLinkedList {
             }
         }
 
-        throw new IllegalArgumentException();
+        throw new IllegalArgumentException("The specified value is not present in the list.");
     }
 
     public Integer lastIndexOf(int value) {
@@ -140,7 +140,7 @@ public class CircularSinglyLinkedList {
             return lastIndex;
         }
 
-        throw new IllegalArgumentException();
+        throw new IllegalArgumentException("The specified value is not present in the list.");
     }
 
     public Integer remove(int index) {
