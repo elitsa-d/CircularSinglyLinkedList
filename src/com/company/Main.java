@@ -35,17 +35,5 @@ public class Main {
         for (int i = 0; i < list.getSize(); i++) {
             System.out.println(list.get(i));
         }
-
-        LinkedList<Integer> num = new LinkedList<>();
-        num.add(1);
-        num.add(2);
-
-        for (int i = 0; i < num.size(); i++) {
-            num.set(i, 0);
-        }
-
-        for (int i = 0; i < num.size(); i++) {
-            System.out.println(num.get(i));
-        }
     }
 }
