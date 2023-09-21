@@ -21,6 +21,19 @@ public class CircularSinglyLinkedList {
         return currentNode;
     }
 
+    public void print() {
+        Node currentNode = this.head;
+        int current = 1;
+
+        while (current <= size) {
+            System.out.print(currentNode.getValue() + " ");
+            currentNode = currentNode.getNext();
+            current++;
+        }
+
+        System.out.println();
+    }
+
     public void print(int times) {
         Node currentNode = this.head;
         int n = size * times;

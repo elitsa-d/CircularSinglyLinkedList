@@ -13,7 +13,7 @@ public class Main {
         list.add(1);
         list.add(3, 7);
 
-        list.print(1);
+        list.print();
 
         System.out.println("Number one is found for the first time at position " + list.indexOf(1));
         System.out.println("Number one is found for the last time at position " + list.lastIndexOf(1));
