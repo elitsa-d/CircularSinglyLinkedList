@@ -25,7 +25,7 @@ public class CircularSinglyLinkedList {
         Node currentNode = this.head;
         int current = 1;
 
-        while (current <= size) {
+        while (current <= this.size) {
             System.out.print(currentNode.getValue() + " ");
             currentNode = currentNode.getNext();
             current++;
@@ -36,7 +36,7 @@ public class CircularSinglyLinkedList {
 
     public void print(int times) {
         Node currentNode = this.head;
-        int n = size * times;
+        int n = this.size * times;
         int current = 1;
 
         while (current <= n) {
